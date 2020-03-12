@@ -24,7 +24,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,Aerospace_eng.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "You Clicked on ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Aerospace", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        textView=(TextView)findViewById(R.id.textView3);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,Agriculture_eng.class);
+                startActivity(intent);
+                Toast.makeText(MainActivity.this, "Agriculture", Toast.LENGTH_SHORT).show();
             }
         });
     }
